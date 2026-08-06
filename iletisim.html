@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.png">
+<title>İletişim — SEGE Technologies</title>
+<meta name="description" content="SEGE Technologies ile iletişime geçin. Telefon: 0531 392 13 31 · info@segetechnology.com · İstanbul, Türkiye.">
+<meta name="theme-color" content="#05070f">
+<link rel="canonical" href="https://www.segetechnology.com/iletisim.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SEGE Technologies">
+<meta property="og:title" content="İletişim — SEGE Technologies">
+<meta property="og:description" content="SEGE Technologies ile iletişime geçin. Telefon: 0531 392 13 31 · info@segetechnology.com · İstanbul, Türkiye.">
+<meta property="og:url" content="https://www.segetechnology.com/iletisim.html">
+<meta property="og:image" content="https://www.segetechnology.com/og-image.png">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<div id="progress"></div>
+<canvas id="net"></canvas>
+<div class="glow"><span class="g1"></span><span class="g2"></span><span class="g3"></span></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="lg" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#2f7bff"/><stop offset="1" stop-color="#63e6ff"/></linearGradient>
+</defs></svg>
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand" aria-label="SEGE Technologies">
+      <span class="logo-full" aria-label="SEGE Technologies"></span>
+    </a>
+    <nav class="links" id="nav">
+      <a href="index.html">Anasayfa</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="hizmetler.html">Hizmetler</a>
+      <a href="iletisim.html" class="active">İletişim</a>
+      <a href="iletisim.html" class="btn desktop">Teklif Alın</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
+  </div>
+</header>
+<main>
+  <section class="page-hero"><div class="wrap">
+    <div class="crumb reveal in"><a href="index.html">Anasayfa</a> · İletişim</div>
+    <h1 class="reveal in">İleti<span class="grad-text">şim</span></h1>
+    <p class="reveal in">İhtiyacınızı bize anlatın; size özel çözümü birlikte tasarlayalım.</p>
+  </div></section>
+  <section style="padding-top:36px"><div class="wrap">
+    <div class="contact reveal">
+      <div>
+        <span class="eyebrow">Bize Ulaşın</span>
+        <h2 style="margin-top:12px">Projenizi konuşalım</h2>
+        <p class="lead">Formu doldurun ya da doğrudan telefon/e-posta ile bize ulaşın.</p>
+        <div class="info">
+          <a href="tel:+905313921331"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg></span><span><small>Telefon</small>0531 392 13 31</span></a>
+          <a href="mailto:info@segetechnology.com"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg></span><span><small>E-posta</small>info@segetechnology.com</span></a>
+          <a href="https://www.segetechnology.com" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg></span><span><small>Web</small>www.segetechnology.com</span></a>
+          <div class="row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><span><small>Adres</small>İstanbul, Türkiye</span></div>
+        </div>
+      </div>
+      <form onsubmit="return sendForm(event)">
+        <input type="text" name="name" placeholder="Adınız Soyadınız" required>
+        <input type="email" name="email" placeholder="E-posta adresiniz" required>
+        <input type="text" name="subject" placeholder="Konu">
+        <textarea name="message" placeholder="Mesajınız..." required></textarea>
+        <input type="hidden" name="_subject" value="SEGE web sitesi — yeni mesaj">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="btn">Mesaj Gönder →</button>
+        <p id="formNote" style="color:var(--muted);font-size:.82rem;text-align:center"></p>
+      </form>
+    </div>
+    <div class="reveal" style="margin-top:26px">
+      <iframe class="map" title="Konum: İstanbul" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=28.60%2C40.90%2C29.40%2C41.20&layer=mapnik&marker=41.0082%2C28.9784"></iframe>
+    </div>
+  </div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a href="index.html" class="brand" style="gap:10px">
+          <span class="logo-full" aria-label="SEGE Technologies"></span>
+        </a>
+        <p style="margin-top:16px;max-width:34ch">Geleceği Birlikte Tasarlıyoruz. Medikal, otomasyon ve yazılım teknolojilerinde kurumsal çözüm ortağınız.</p>
+      </div>
+      <div>
+        <h5>Sayfalar</h5>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="iletisim.html">İletişim</a>
+      </div>
+      <div>
+        <h5>İletişim</h5>
+        <a href="tel:+905313921331">0531 392 13 31</a>
+        <a href="mailto:info@segetechnology.com">info@segetechnology.com</a>
+        <a href="https://www.segetechnology.com" target="_blank" rel="noopener">www.segetechnology.com</a>
+        <a href="iletisim.html">İstanbul, Türkiye</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 SEGE Technologies · Tüm hakları saklıdır. · <a onclick="openKvkk()" style="cursor:pointer;color:var(--muted)">KVKK Aydınlatma Metni</a></div>
+      <div>Serkan Kaya · Founder &amp; Managing Director</div>
+    </div>
+  </div>
+</footer>
+<a class="wa" href="https://wa.me/905313921331?text=Merhaba%2C%20SEGE%20Technologies%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp ile yazın">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.73-.85-2-.95-.27-.1-.46-.15-.65.15-.19.28-.74.94-.9 1.13-.17.19-.33.21-.61.07-.3-.15-1.25-.46-2.37-1.46-.87-.78-1.46-1.74-1.63-2.03-.17-.29-.02-.44.13-.58.14-.13.3-.33.44-.5.15-.17.2-.29.3-.48.1-.19.05-.36-.02-.5-.08-.15-.65-1.56-.89-2.13-.23-.56-.47-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.36-.26.29-1 .98-1 2.4 0 1.42 1.03 2.79 1.17 2.98.15.19 2.02 3.09 4.9 4.34.68.3 1.21.47 1.63.6.69.22 1.31.19 1.8.12.55-.08 1.69-.69 1.93-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33z M12 2a10 10 0 0 0-8.53 15.28L2 22l4.85-1.42A10 10 0 1 0 12 2zm0 18.18c-1.5 0-2.98-.4-4.27-1.16l-.3-.18-2.84.83.85-2.77-.2-.32A8.18 8.18 0 1 1 12 20.18z"/></svg>
+</a>
+<div class="cookie" id="cookie">
+  <p>Bu web sitesi, size daha iyi bir deneyim sunmak için çerezler kullanır. Ayrıntılar için <a onclick="openKvkk()">KVKK Aydınlatma Metni</a>'ni inceleyebilirsiniz.</p>
+  <div class="row"><button class="acc" onclick="hideCookie()">Kabul Et</button><button class="dec" onclick="hideCookie()">Reddet</button></div>
+</div>
+<div class="modal" id="kvkk" role="dialog" aria-modal="true" aria-label="KVKK Aydınlatma Metni">
+  <div class="box">
+    <button class="x" onclick="closeKvkk()" aria-label="Kapat">&times;</button>
+    <h3 class="grad-text">KVKK Aydınlatma Metni</h3>
+    <p><b style="color:var(--txt)">Veri Sorumlusu:</b> SEGE Technologies (İstanbul, Türkiye).</p>
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında, web sitemiz üzerinden ilettiğiniz ad, soyad, e-posta ve mesaj bilgileriniz; yalnızca talebinize dönüş yapmak ve sizinle iletişim kurmak amacıyla işlenmekte, üçüncü kişilerle paylaşılmamaktadır.</p>
+    <p>Verileriniz, işleme amacının gerektirdiği süre boyunca saklanır ve amaç ortadan kalktığında silinir veya anonim hâle getirilir. KVKK'nın 11. maddesi uyarınca; kişisel verilerinize erişme, düzeltilmesini veya silinmesini talep etme haklarına sahipsiniz.</p>
+    <p>Web sitemiz, deneyimi iyileştirmek amacıyla teknik çerezler kullanabilir. Taleplerinizi <a href="mailto:info@segetechnology.com" style="color:var(--cyan)">info@segetechnology.com</a> adresine iletebilirsiniz.</p>
+    <p style="font-size:.8rem;opacity:.7">Bu metin genel bir bilgilendirme şablonudur; yürürlükteki mevzuata ve firmanızın uygulamalarına göre güncellenmelidir.</p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
