@@ -1,13 +1,13 @@
 
   :root{
-    --bg:#0b1220;
-    --bg-2:#0f1a30;
-    --panel:#141f38;
-    --panel-2:#1a2842;
+    --bg:#0e1a34;
+    --bg-2:#13233f;
+    --panel:#182b4b;
+    --panel-2:#21375c;
     --line:rgba(120,165,255,.14);
     --line-2:rgba(120,165,255,.28);
     --txt:#eaf0ff;
-    --muted:#93a1c4;
+    --muted:#a7b4d4;
     --blue:#2f7bff;
     --blue-2:#37b6ff;
     --cyan:#63e6ff;
@@ -27,9 +27,9 @@
   /* premium derinlik: koyu lacivert zemin üzerinde yumuşak mavi/cyan ışık (sabit katman) */
   body::before{content:"";position:fixed;inset:0;z-index:-3;pointer-events:none;
     background:
-      radial-gradient(1100px 720px at 50% -12%, rgba(47,123,255,.22), transparent 60%),
-      radial-gradient(820px 560px at 92% 3%, rgba(99,230,255,.12), transparent 55%),
-      radial-gradient(760px 760px at 2% 102%, rgba(47,123,255,.10), transparent 60%);}
+      radial-gradient(1100px 720px at 50% -12%, rgba(47,123,255,.30), transparent 60%),
+      radial-gradient(820px 560px at 92% 3%, rgba(99,230,255,.17), transparent 55%),
+      radial-gradient(760px 760px at 2% 102%, rgba(47,123,255,.15), transparent 60%);}
   h1,h2,h3,.brand .name,.stat b{font-family:'Sora',sans-serif}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
