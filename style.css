@@ -333,3 +333,18 @@
   .benefit .bi svg{width:22px;height:22px;stroke:var(--cyan)}
   @media(max-width:900px){.mods{grid-template-columns:repeat(2,1fr)}.benefits{grid-template-columns:1fr}}
   @media(max-width:640px){.mods{grid-template-columns:1fr}}
+
+/* Fotoğraflı hero (Canias tarzı) */
+.hero-photo{position:relative;min-height:620px;display:flex;align-items:center;overflow:hidden}
+.hero-photo img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-photo::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg,rgba(9,16,36,.95) 0%,rgba(9,16,36,.82) 42%,rgba(9,16,36,.38) 78%,rgba(9,16,36,.12) 100%)}
+.hero-photo .wrap{position:relative;z-index:2}
+.hero-photo h1{font-size:3.4rem;line-height:1.06;margin:16px 0 18px}
+.hero-photo .lead{font-size:1.12rem;color:#cdd8f2;max-width:52ch;margin-bottom:28px}
+@media(max-width:768px){
+  .hero-photo{min-height:540px}
+  .hero-photo h1{font-size:2.2rem}
+  .hero-photo .lead{font-size:1rem}
+  .hero-photo::after{background:linear-gradient(180deg,rgba(9,16,36,.8),rgba(9,16,36,.93))}
+}
