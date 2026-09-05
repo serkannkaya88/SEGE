@@ -144,6 +144,18 @@
   .card:hover .card-img img{transform:scale(1.06)}
   .card-img::after{content:"";position:absolute;inset:0;pointer-events:none;
     background:linear-gradient(180deg,rgba(11,18,32,0) 45%,rgba(11,18,32,.6))}
+  /* ERP wow showcase: görsel + yazı yan yana */
+  .showcase-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding:20px 0}
+  .showcase-grid h2{margin:10px 0 14px}
+  .showcase-grid > div > p{color:var(--muted);margin-bottom:18px}
+  .showcase-grid .svc-detail{margin-bottom:24px}
+  .showcase-img{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line-2);
+    box-shadow:var(--shadow);transition:transform .4s ease}
+  .showcase-img:hover{transform:translateY(-6px)}
+  .showcase-img img{width:100%;display:block}
+  .showcase-img::after{content:"";position:absolute;inset:0;pointer-events:none;
+    box-shadow:inset 0 0 70px rgba(47,123,255,.18);border-radius:20px}
+  @media(max-width:820px){.showcase-grid{grid-template-columns:1fr;gap:26px}}
   .card-in::after{content:"";position:absolute;inset:0;
     background:radial-gradient(500px circle at var(--mx,50%) var(--my,0%),rgba(55,182,255,.12),transparent 42%);
     opacity:0;transition:opacity .3s}
