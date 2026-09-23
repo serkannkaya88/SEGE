@@ -361,13 +361,43 @@
     scroll-snap-align:start;
     scroll-snap-stop:always;
     display:flex;flex-direction:column;justify-content:center;
-    padding-top:96px;padding-bottom:56px;box-sizing:border-box;
+    padding-top:88px;padding-bottom:48px;box-sizing:border-box;
   }
   body.catalog .hero-photo{min-height:100vh;scroll-snap-align:start;scroll-snap-stop:always}
   body.catalog footer{scroll-snap-align:start}
   /* katalog sayfalarında içerik dikeyde ortalı ve ferah dursun */
   body.catalog main > section > .wrap{width:100%}
+  body.catalog .sol-media{aspect-ratio:5/4;max-height:66vh}
 }
 @media(prefers-reduced-motion:reduce){
   html:has(body.catalog){scroll-snap-type:none}
+}
+
+/* ===== Çözüm katalog sayfaları (her hizmet = tam ekran sayfa) ===== */
+.sol-in{display:grid;grid-template-columns:1.02fr .98fr;gap:60px;align-items:center;width:100%}
+.sol-in.rev .sol-text{order:2}
+.sol-text{position:relative}
+.sol-num{font-family:'Sora',sans-serif;font-size:clamp(3.2rem,6vw,5.2rem);font-weight:800;line-height:.9;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+  letter-spacing:-.03em;margin-bottom:6px;opacity:.95}
+.sol-text .eyebrow{display:block;margin-bottom:8px}
+.sol-text h2{margin:0 0 16px;font-size:clamp(1.9rem,3.2vw,2.7rem);font-weight:800;letter-spacing:-.025em;line-height:1.08}
+.sol-text > p{color:var(--muted);font-size:1.06rem;max-width:52ch;margin:0 0 22px}
+.sol-text .svc-detail{margin:0 0 26px}
+.sol-media{position:relative;border-radius:26px;overflow:hidden;aspect-ratio:5/4;
+  border:1px solid var(--line-2);background:var(--bg-2);
+  box-shadow:0 30px 70px -30px rgba(0,0,0,.7), 0 0 0 1px rgba(120,165,255,.06)}
+.sol-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s ease}
+.sol-media:hover img{transform:scale(1.05)}
+.sol-media::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(120deg,rgba(11,18,32,.55),transparent 45%),linear-gradient(0deg,rgba(11,18,32,.6),transparent 55%)}
+.sol-ico{position:absolute;left:22px;bottom:22px;z-index:2;width:60px;height:60px;border-radius:17px;
+  display:grid;place-items:center;background:rgba(13,20,36,.75);backdrop-filter:blur(6px);
+  border:1px solid rgba(120,165,255,.3);box-shadow:0 10px 30px -10px #2f7bff88}
+.sol-ico svg{width:30px;height:30px;stroke:url(#lg)}
+@media(max-width:900px){
+  .sol-in,.sol-in.rev{grid-template-columns:1fr;gap:26px}
+  .sol-in.rev .sol-text{order:0}
+  .sol-media{aspect-ratio:16/10}
+  .sol-num{font-size:2.8rem}
 }
