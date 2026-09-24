@@ -274,7 +274,7 @@
   .wa svg{width:33px;height:33px;fill:#fff}
   .wa:hover{transform:scale(1.07)}
   @keyframes waPulse{0%{box-shadow:0 14px 32px -8px #25d36699,0 0 0 0 #25d36666}70%{box-shadow:0 14px 32px -8px #25d36699,0 0 0 18px #25d36600}100%{box-shadow:0 14px 32px -8px #25d36699,0 0 0 0 #25d36600}}
-  .cookie{position:fixed;left:22px;bottom:22px;z-index:85;max-width:400px;background:rgba(13,20,36,.97);
+  .cookie{display:none;position:fixed;left:22px;bottom:22px;z-index:85;max-width:400px;background:rgba(13,20,36,.97);
     border:1px solid var(--line-2);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);backdrop-filter:blur(10px)}
   .cookie p{color:var(--muted);font-size:.84rem;margin-bottom:14px}
   .cookie a{color:var(--cyan);text-decoration:underline;cursor:pointer}

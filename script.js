@@ -36,7 +36,10 @@
     }catch(_){note.style.color='#ff8a8a';note.textContent='Gönderilemedi. Lütfen info@segetechnology.com adresine yazabilirsiniz.';}
     return false;
   }
-  function hideCookie(){var c=document.getElementById('cookie');if(c)c.style.display='none';}
+  function hideCookie(){try{localStorage.setItem('sege_cookie','1');}catch(e){}var c=document.getElementById('cookie');if(c)c.style.display='none';}
+  // çerez tercihi daha önce verilmediyse kutuyu göster (verildiyse hiç gösterme)
+  (function(){var seen;try{seen=localStorage.getItem('sege_cookie');}catch(e){seen=null;}
+    if(!seen){var c=document.getElementById('cookie');if(c)c.style.display='block';}})();
   function openKvkk(){document.getElementById('kvkk').classList.add('open');}
   function closeKvkk(){document.getElementById('kvkk').classList.remove('open');}
 
